@@ -50,7 +50,6 @@ test:
     {% set cmds = cmds + ["jy1sat_ssdv.py", "smog_p_spectrum.py"] %}  # [not win]
     {% set cmds = cmds + ["jy1sat_ssdv", "smog_p_spectrum"] %}  # [win]
     {% for cmd in cmds %}
-
     - {{ cmd }} || ec=$?; if [ $ec -gt 1 ]; then exit $ec; fi  # [not win]
     - {{ cmd }} || if !ERRORLEVEL! LEQ 1 cmd /c "exit /b 0"  # [win]
     {% endfor %}
@@ -65,11 +64,8 @@ test:
     - if not exist %PREFIX%\\Library\\lib\\{{ name }}.lib exit 1  # [win]
 
     # verify that (some) GRC blocks get installed
-    {% set blocks = [
-        "satellites_decode_rs",
-        "satellites_ax100_decode",
-        "satellites_check_crc",
-    ] %}
+    {% set blocks = ["satellites_decode_rs", "satellites_ax100_decode"] %}
+    {% set blocks = blocks + ["satellites_check_crc"] %}
 
     {% for block in blocks %}
     - test -f $PREFIX/share/gnuradio/grc/blocks/{{ block }}.block.yml  # [not win]
