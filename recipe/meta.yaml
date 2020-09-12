@@ -1,5 +1,5 @@
 {% set name = "gnuradio-satellites" %}
-{% set version = "3.3.0" %}
+{% set version = "3.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/daniestevez/gr-satellites/archive/v{{ version }}.tar.gz
-  sha256: ba473c16579105aa9fba55959582ca810d5d77ae7840eff28cadd7767f8280b3
+  sha256: ea08fdd1bbe3dfbbcc32336c00cdb8918eb8f4b42360d7fea701dda424ddb39a
 
 build:
-  number: 1
+  number: 0
   run_exports:
     - {{ pin_subpackage('gnuradio-satellites', max_pin='x.x') }}
 
@@ -80,7 +80,7 @@ about:
   license: GPL-3.0-or-later
   license_family: GPL
   license_file: LICENSE
-  summary: 'A collection of decoders for Amateur satellites'
+  summary: A collection of decoders for Amateur satellites
   description: |
     gr-satellites is a GNU Radio out-of-tree module with a collection of telemetry decoders for Amateur satellites.
   doc_url: https://gr-satellites.readthedocs.io/en/latest/index.html
