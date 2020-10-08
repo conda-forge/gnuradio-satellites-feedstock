@@ -36,7 +36,9 @@ requirements:
   run:
     - boost-cpp
     - construct >=2.9
+    - gnuradio-zeromq
     - matplotlib-base
+    - numpy
     - python
     - pyyaml
     - requests
