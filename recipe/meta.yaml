@@ -1,5 +1,5 @@
 {% set name = "gnuradio-satellites" %}
-{% set version = "3.4.0" %}
+{% set version = "3.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,9 @@ package:
 
 source:
   url: https://github.com/daniestevez/gr-satellites/archive/v{{ version }}.tar.gz
-  sha256: ea08fdd1bbe3dfbbcc32336c00cdb8918eb8f4b42360d7fea701dda424ddb39a
+  sha256: ce2c35ba4781c2e04e5fafc181e35d428018dc61e45f82fe7ebf85e806a1eb65
+  patches:
+    - 0001-docs-Don-t-build-man-pages-on-Windows.patch
 
 build:
   number: 0
@@ -18,6 +20,7 @@ requirements:
   build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
+    - bzip2  # [not win]
     - cmake
     - make  # [not win]
     - ninja  # [win]
@@ -36,7 +39,9 @@ requirements:
   run:
     - boost-cpp
     - construct >=2.9
+    - gnuradio-zeromq
     - matplotlib-base
+    - numpy
     - python
     - pyyaml
     - requests
@@ -46,9 +51,7 @@ requirements:
 test:
   commands:
     # verify that commands run (will print usage statement)
-    {% set cmds = ["gr_satellites"] %}
-    {% set cmds = cmds + ["jy1sat_ssdv.py", "smog_p_spectrum.py"] %}  # [not win]
-    {% set cmds = cmds + ["jy1sat_ssdv", "smog_p_spectrum"] %}  # [win]
+    {% set cmds = ["gr_satellites", "jy1sat_ssdv", "smog_p_spectrum"] %}
     {% for cmd in cmds %}
     - {{ cmd }} || ec=$?; if [ $ec -gt 1 ]; then exit $ec; fi  # [not win]
     - {{ cmd }} || if !ERRORLEVEL! LEQ 1 cmd /c "exit /b 0"  # [win]

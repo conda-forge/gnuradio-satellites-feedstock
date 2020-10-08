@@ -5,9 +5,13 @@ Home: https://github.com/daniestevez/gr-satellites
 
 Package license: GPL-3.0-or-later
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/gnuradio-satellites-feedstock/blob/master/LICENSE.txt)
 
 Summary: A collection of decoders for Amateur satellites
+
+Development: https://github.com/daniestevez/gr-satellites
+
+Documentation: https://gr-satellites.readthedocs.io/en/latest/index.html
 
 gr-satellites is a GNU Radio out-of-tree module with a collection of telemetry decoders for Amateur satellites.
 
