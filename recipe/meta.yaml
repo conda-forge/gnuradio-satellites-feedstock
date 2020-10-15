@@ -12,7 +12,7 @@ source:
     - 0001-docs-Don-t-build-man-pages-on-Windows.patch
 
 build:
-  number: 0
+  number: 1
   run_exports:
     - {{ pin_subpackage('gnuradio-satellites', max_pin='x.x') }}
 
