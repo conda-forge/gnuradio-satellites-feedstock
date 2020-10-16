@@ -10,6 +10,7 @@ source:
   sha256: ce2c35ba4781c2e04e5fafc181e35d428018dc61e45f82fe7ebf85e806a1eb65
   patches:
     - 0001-docs-Don-t-build-man-pages-on-Windows.patch
+    - 0001-Replace-boost-bind-by-C-lambdas.patch
 
 build:
   number: 2
