@@ -1,5 +1,5 @@
 {% set name = "gnuradio-satellites" %}
-{% set version = "3.5.0" %}
+{% set version = "3.5.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,13 +7,13 @@ package:
 
 source:
   url: https://github.com/daniestevez/gr-satellites/archive/v{{ version }}.tar.gz
-  sha256: ce2c35ba4781c2e04e5fafc181e35d428018dc61e45f82fe7ebf85e806a1eb65
+  sha256: cd7678bc5f833066941f9a426f298cbd4ff8c00639ab27acd451d43950ecb5c3
   patches:
     - 0001-docs-Don-t-build-man-pages-on-Windows.patch
     - 0001-Replace-boost-bind-by-C-lambdas.patch
 
 build:
-  number: 2
+  number: 0
   run_exports:
     - {{ pin_subpackage('gnuradio-satellites', max_pin='x.x') }}
 
