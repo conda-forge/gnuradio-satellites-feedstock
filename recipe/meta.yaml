@@ -28,6 +28,7 @@ requirements:
     - boost-cpp
     - gnuradio-core
     - pip  # [win]
+    - pybind11
     - python
     - swig
     - volk
