@@ -11,6 +11,7 @@ cmake -G "Ninja" ^
     -DCMAKE_BUILD_TYPE:STRING=Release ^
     -DCMAKE_INSTALL_PREFIX:PATH="%LIBRARY_PREFIX%" ^
     -DCMAKE_PREFIX_PATH:PATH="%LIBRARY_PREFIX%" ^
+    -DGR_PYTHON_DIR:PATH="%SP_DIR%" ^
     -DENABLE_DOXYGEN=OFF ^
     ..
 if errorlevel 1 exit 1
