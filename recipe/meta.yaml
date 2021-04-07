@@ -35,7 +35,6 @@ requirements:
     - log4cpp
 
   run:
-    - boost-cpp
     - construct >=2.9
     - gnuradio-zeromq
     - matplotlib-base
