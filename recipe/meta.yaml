@@ -10,7 +10,7 @@ source:
   sha256: da3e1d6eeda14c3b70457e00161349171f052bfe53f2cb8e4cf82a178366147e
 
 build:
-  number: 0
+  number: 1
   run_exports:
     - {{ pin_subpackage('gnuradio-satellites', max_pin='x.x') }}
 
@@ -35,7 +35,6 @@ requirements:
     - log4cpp
 
   run:
-    - boost-cpp
     - construct >=2.9
     - gnuradio-zeromq
     - matplotlib-base
@@ -91,3 +90,4 @@ extra:
   recipe-maintainers:
     - petrushy
     - ryanvolz
+    - daniestevez
