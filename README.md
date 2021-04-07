@@ -139,6 +139,7 @@ Installing `gnuradio-satellites` from the `conda-forge` channel can be achieved 
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `gnuradio-satellites` can be installed with:
@@ -217,6 +218,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@daniestevez](https://github.com/daniestevez/)
 * [@petrushy](https://github.com/petrushy/)
 * [@ryanvolz](https://github.com/ryanvolz/)
 

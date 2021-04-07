@@ -19,7 +19,7 @@ cxx_compiler_version:
 docker_image:
 - quay.io/condaforge/linux-anvil-comp7
 gnuradio_core:
-- 3.9.0
+- 3.9.1
 pin_run_as_build:
   boost-cpp:
     max_pin: x.x.x
@@ -33,7 +33,7 @@ python:
 target_platform:
 - linux-64
 volk:
-- '2.4.1'
+- '2.4'
 zip_keys:
 - - c_compiler_version
   - cxx_compiler_version
