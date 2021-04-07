@@ -3,3 +3,5 @@ azure:
 conda_forge_output_validation: true
 bot:
   automerge: true
+  abi_migration_branches:
+   - 3.x
