@@ -1,5 +1,5 @@
 {% set name = "gnuradio-satellites" %}
-{% set version = "3.7.0" %}
+{% set version = "3.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/daniestevez/gr-satellites/archive/v{{ version }}.tar.gz
-  sha256: da3e1d6eeda14c3b70457e00161349171f052bfe53f2cb8e4cf82a178366147e
+  sha256: 6ea0385e3e569371367958bd90312cbe94646da11dfb81c0086a32d95fb68c6c
 
 build:
-  number: 2
+  number: 0
   run_exports:
     - {{ pin_subpackage('gnuradio-satellites', max_pin='x.x') }}
 
@@ -31,8 +31,6 @@ requirements:
     - python
     - swig
     - volk
-    # pulled in by gnuradio-core and linked against, so include explicitly
-    - log4cpp
 
   run:
     - construct >=2.9
@@ -42,8 +40,6 @@ requirements:
     - python
     - pyyaml
     - requests
-    # pulled in by gnuradio-core and linked against, so include explicitly
-    - log4cpp
 
 test:
   commands:
