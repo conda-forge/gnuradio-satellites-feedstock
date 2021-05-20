@@ -36,7 +36,6 @@ requirements:
     - pybind11
     - python
     - numpy
-    - swig
     - volk
 
   run:
