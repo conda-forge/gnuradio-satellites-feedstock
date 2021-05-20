@@ -10,7 +10,7 @@ source:
   sha256: ffda84cf1a669072d2e46a6b9f1703751995827d34f6d1273101abf0a1acb801
 
 build:
-  number: 0
+  number: 1
   run_exports:
     - {{ pin_subpackage('gnuradio-satellites', max_pin='x.x') }}
 
@@ -23,6 +23,11 @@ requirements:
     - make  # [not win]
     - ninja  # [win]
     - pkg-config  # [not win]
+    # cross-compilation requirements
+    - python                              # [build_platform != target_platform]
+    - cross-python_{{ target_platform }}  # [build_platform != target_platform]
+    - numpy                               # [build_platform != target_platform]
+    - pybind11                            # [build_platform != target_platform]
 
   host:
     - boost-cpp
@@ -30,7 +35,7 @@ requirements:
     - pip  # [win]
     - pybind11
     - python
-    - swig
+    - numpy
     - volk
 
   run:
