@@ -10,7 +10,7 @@ source:
   sha256: e9d83922f0d4d54a0e80eb39fafdd0d9fd68efa104d065df93a461f2ff152063
 
 build:
-  number: 0
+  number: 1
   run_exports:
     - {{ pin_subpackage('gnuradio-satellites', max_pin='x.x') }}
 
