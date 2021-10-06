@@ -1,0 +1,25 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Ryan Volz <ryan.volz@gmail.com>
+Date: Tue, 5 Oct 2021 23:44:13 -0400
+Subject: [PATCH] Set VERSION_PATCH to work around change to GrVersion.cmake in
+ 3.9.3.
+
+---
+ CMakeLists.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 1adc6a8..3f545b4 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -45,6 +45,7 @@ list(INSERT CMAKE_MODULE_PATH 0 ${CMAKE_SOURCE_DIR}/cmake/Modules)
+ set(VERSION_MAJOR 4)
+ set(VERSION_API 3)
+ set(VERSION_ABI 1)
++set(VERSION_PATCH 0)
+ 
+ cmake_policy(SET CMP0011 NEW)
+ 
+-- 
+2.25.1
+
