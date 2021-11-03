@@ -8,8 +8,6 @@ package:
 source:
   url: https://github.com/daniestevez/gr-satellites/archive/v{{ version }}.tar.gz
   sha256: 3bfc1d75818154fc7c9dbd0427c850f09b97e3757f9449f715d45d32aaa5e18d
-  patches:
-    - 0001-Set-VERSION_PATCH-to-work-around-change-to-GrVersion.patch
 
 build:
   number: 0
