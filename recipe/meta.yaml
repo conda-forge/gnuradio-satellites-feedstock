@@ -37,6 +37,7 @@ requirements:
     - python
     - numpy
     - volk
+    - six
 
   run:
     - construct >=2.9
@@ -46,6 +47,7 @@ requirements:
     - python
     - pyyaml
     - requests
+    - six
 
 test:
   commands:
