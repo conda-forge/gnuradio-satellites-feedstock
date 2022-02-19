@@ -8,66 +8,126 @@ jobs:
     vmImage: ubuntu-latest
   strategy:
     matrix:
-      linux_64_numpy1.18python3.7.____cpython:
-        CONFIG: linux_64_numpy1.18python3.7.____cpython
+      linux_64_gnuradio_extra_pin3.9.5numpy1.18python3.7.____cpython:
+        CONFIG: linux_64_gnuradio_extra_pin3.9.5numpy1.18python3.7.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-        SHORT_CONFIG: linux_64_numpy1.18python3.7.____cpython
-      linux_64_numpy1.18python3.8.____cpython:
-        CONFIG: linux_64_numpy1.18python3.8.____cpython
+        SHORT_CONFIG: linux_64_gnuradio_extra_pin3.9.5num_h9789fb8fcf
+      linux_64_gnuradio_extra_pin3.9.5numpy1.18python3.8.____cpython:
+        CONFIG: linux_64_gnuradio_extra_pin3.9.5numpy1.18python3.8.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-        SHORT_CONFIG: linux_64_numpy1.18python3.8.____cpython
-      linux_64_numpy1.19python3.9.____cpython:
-        CONFIG: linux_64_numpy1.19python3.9.____cpython
+        SHORT_CONFIG: linux_64_gnuradio_extra_pin3.9.5num_h13b17a8f94
+      linux_64_gnuradio_extra_pin3.9.5numpy1.19python3.9.____cpython:
+        CONFIG: linux_64_gnuradio_extra_pin3.9.5numpy1.19python3.9.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-        SHORT_CONFIG: linux_64_numpy1.19python3.9.____cpython
-      linux_64_numpy1.21python3.10.____cpython:
-        CONFIG: linux_64_numpy1.21python3.10.____cpython
+        SHORT_CONFIG: linux_64_gnuradio_extra_pin3.9.5num_h69be1c185e
+      linux_64_gnuradio_extra_pin3.9.5numpy1.21python3.10.____cpython:
+        CONFIG: linux_64_gnuradio_extra_pin3.9.5numpy1.21python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-        SHORT_CONFIG: linux_64_numpy1.21python3.10.____cpython
-      linux_aarch64_numpy1.18python3.7.____cpython:
-        CONFIG: linux_aarch64_numpy1.18python3.7.____cpython
+        SHORT_CONFIG: linux_64_gnuradio_extra_pin3.9.5num_h34d421a015
+      linux_64_gnuradio_extra_pinnumpy1.18python3.7.____cpython:
+        CONFIG: linux_64_gnuradio_extra_pinnumpy1.18python3.7.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-        SHORT_CONFIG: linux_aarch64_numpy1.18python3.7.____cpython
-      linux_aarch64_numpy1.18python3.8.____cpython:
-        CONFIG: linux_aarch64_numpy1.18python3.8.____cpython
+        SHORT_CONFIG: linux_64_gnuradio_extra_pinnumpy1.1_h41f06036e2
+      linux_64_gnuradio_extra_pinnumpy1.18python3.8.____cpython:
+        CONFIG: linux_64_gnuradio_extra_pinnumpy1.18python3.8.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-        SHORT_CONFIG: linux_aarch64_numpy1.18python3.8.____cpython
-      linux_aarch64_numpy1.19python3.9.____cpython:
-        CONFIG: linux_aarch64_numpy1.19python3.9.____cpython
+        SHORT_CONFIG: linux_64_gnuradio_extra_pinnumpy1.1_h9835111571
+      linux_64_gnuradio_extra_pinnumpy1.19python3.9.____cpython:
+        CONFIG: linux_64_gnuradio_extra_pinnumpy1.19python3.9.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-        SHORT_CONFIG: linux_aarch64_numpy1.19python3.9.____cpython
-      linux_aarch64_numpy1.21python3.10.____cpython:
-        CONFIG: linux_aarch64_numpy1.21python3.10.____cpython
+        SHORT_CONFIG: linux_64_gnuradio_extra_pinnumpy1.1_he2c3f559ce
+      linux_64_gnuradio_extra_pinnumpy1.21python3.10.____cpython:
+        CONFIG: linux_64_gnuradio_extra_pinnumpy1.21python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-        SHORT_CONFIG: linux_aarch64_numpy1.21python3.10.____cpython
-      linux_ppc64le_numpy1.18python3.7.____cpython:
-        CONFIG: linux_ppc64le_numpy1.18python3.7.____cpython
+        SHORT_CONFIG: linux_64_gnuradio_extra_pinnumpy1.2_h42b1bbeabf
+      linux_aarch64_gnuradio_extra_pin3.9.5numpy1.18python3.7.____cpython:
+        CONFIG: linux_aarch64_gnuradio_extra_pin3.9.5numpy1.18python3.7.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-        SHORT_CONFIG: linux_ppc64le_numpy1.18python3.7.____cpython
-      linux_ppc64le_numpy1.18python3.8.____cpython:
-        CONFIG: linux_ppc64le_numpy1.18python3.8.____cpython
+        SHORT_CONFIG: linux_aarch64_gnuradio_extra_pin3.9_h5ae46637a5
+      linux_aarch64_gnuradio_extra_pin3.9.5numpy1.18python3.8.____cpython:
+        CONFIG: linux_aarch64_gnuradio_extra_pin3.9.5numpy1.18python3.8.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-        SHORT_CONFIG: linux_ppc64le_numpy1.18python3.8.____cpython
-      linux_ppc64le_numpy1.19python3.9.____cpython:
-        CONFIG: linux_ppc64le_numpy1.19python3.9.____cpython
+        SHORT_CONFIG: linux_aarch64_gnuradio_extra_pin3.9_ha2123d6acf
+      linux_aarch64_gnuradio_extra_pin3.9.5numpy1.19python3.9.____cpython:
+        CONFIG: linux_aarch64_gnuradio_extra_pin3.9.5numpy1.19python3.9.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-        SHORT_CONFIG: linux_ppc64le_numpy1.19python3.9.____cpython
-      linux_ppc64le_numpy1.21python3.10.____cpython:
-        CONFIG: linux_ppc64le_numpy1.21python3.10.____cpython
+        SHORT_CONFIG: linux_aarch64_gnuradio_extra_pin3.9_h7525a58b6a
+      linux_aarch64_gnuradio_extra_pin3.9.5numpy1.21python3.10.____cpython:
+        CONFIG: linux_aarch64_gnuradio_extra_pin3.9.5numpy1.21python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-        SHORT_CONFIG: linux_ppc64le_numpy1.21python3.10.____cpython
+        SHORT_CONFIG: linux_aarch64_gnuradio_extra_pin3.9_hf0853d7abc
+      linux_aarch64_gnuradio_extra_pinnumpy1.18python3.7.____cpython:
+        CONFIG: linux_aarch64_gnuradio_extra_pinnumpy1.18python3.7.____cpython
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+        SHORT_CONFIG: linux_aarch64_gnuradio_extra_pinnum_h2c9f1d52cd
+      linux_aarch64_gnuradio_extra_pinnumpy1.18python3.8.____cpython:
+        CONFIG: linux_aarch64_gnuradio_extra_pinnumpy1.18python3.8.____cpython
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+        SHORT_CONFIG: linux_aarch64_gnuradio_extra_pinnum_h1fc7c2c333
+      linux_aarch64_gnuradio_extra_pinnumpy1.19python3.9.____cpython:
+        CONFIG: linux_aarch64_gnuradio_extra_pinnumpy1.19python3.9.____cpython
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+        SHORT_CONFIG: linux_aarch64_gnuradio_extra_pinnum_h1a2068e52b
+      linux_aarch64_gnuradio_extra_pinnumpy1.21python3.10.____cpython:
+        CONFIG: linux_aarch64_gnuradio_extra_pinnumpy1.21python3.10.____cpython
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+        SHORT_CONFIG: linux_aarch64_gnuradio_extra_pinnum_h63be9dad3d
+      linux_ppc64le_gnuradio_extra_pin3.9.5numpy1.18python3.7.____cpython:
+        CONFIG: linux_ppc64le_gnuradio_extra_pin3.9.5numpy1.18python3.7.____cpython
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+        SHORT_CONFIG: linux_ppc64le_gnuradio_extra_pin3.9_h03358dc831
+      linux_ppc64le_gnuradio_extra_pin3.9.5numpy1.18python3.8.____cpython:
+        CONFIG: linux_ppc64le_gnuradio_extra_pin3.9.5numpy1.18python3.8.____cpython
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+        SHORT_CONFIG: linux_ppc64le_gnuradio_extra_pin3.9_hffe2647bd8
+      linux_ppc64le_gnuradio_extra_pin3.9.5numpy1.19python3.9.____cpython:
+        CONFIG: linux_ppc64le_gnuradio_extra_pin3.9.5numpy1.19python3.9.____cpython
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+        SHORT_CONFIG: linux_ppc64le_gnuradio_extra_pin3.9_h80becb7da3
+      linux_ppc64le_gnuradio_extra_pin3.9.5numpy1.21python3.10.____cpython:
+        CONFIG: linux_ppc64le_gnuradio_extra_pin3.9.5numpy1.21python3.10.____cpython
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+        SHORT_CONFIG: linux_ppc64le_gnuradio_extra_pin3.9_h139a48e282
+      linux_ppc64le_gnuradio_extra_pinnumpy1.18python3.7.____cpython:
+        CONFIG: linux_ppc64le_gnuradio_extra_pinnumpy1.18python3.7.____cpython
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+        SHORT_CONFIG: linux_ppc64le_gnuradio_extra_pinnum_h71c4c44b15
+      linux_ppc64le_gnuradio_extra_pinnumpy1.18python3.8.____cpython:
+        CONFIG: linux_ppc64le_gnuradio_extra_pinnumpy1.18python3.8.____cpython
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+        SHORT_CONFIG: linux_ppc64le_gnuradio_extra_pinnum_hf5d5fd26a5
+      linux_ppc64le_gnuradio_extra_pinnumpy1.19python3.9.____cpython:
+        CONFIG: linux_ppc64le_gnuradio_extra_pinnumpy1.19python3.9.____cpython
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+        SHORT_CONFIG: linux_ppc64le_gnuradio_extra_pinnum_h8cdbf94666
+      linux_ppc64le_gnuradio_extra_pinnumpy1.21python3.10.____cpython:
+        CONFIG: linux_ppc64le_gnuradio_extra_pinnumpy1.21python3.10.____cpython
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+        SHORT_CONFIG: linux_ppc64le_gnuradio_extra_pinnum_hf12c364f08
   timeoutInMinutes: 360
 
   steps:

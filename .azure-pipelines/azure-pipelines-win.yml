@@ -8,22 +8,38 @@ jobs:
     vmImage: windows-2019
   strategy:
     matrix:
-      win_64_numpy1.18python3.7.____cpython:
-        CONFIG: win_64_numpy1.18python3.7.____cpython
+      win_64_gnuradio_extra_pin3.9.5numpy1.18python3.7.____cpython:
+        CONFIG: win_64_gnuradio_extra_pin3.9.5numpy1.18python3.7.____cpython
         UPLOAD_PACKAGES: 'True'
-        SHORT_CONFIG: win_64_numpy1.18python3.7.____cpython
-      win_64_numpy1.18python3.8.____cpython:
-        CONFIG: win_64_numpy1.18python3.8.____cpython
+        SHORT_CONFIG: win_64_gnuradio_extra_pin3.9.5numpy_h863564e7f7
+      win_64_gnuradio_extra_pin3.9.5numpy1.18python3.8.____cpython:
+        CONFIG: win_64_gnuradio_extra_pin3.9.5numpy1.18python3.8.____cpython
         UPLOAD_PACKAGES: 'True'
-        SHORT_CONFIG: win_64_numpy1.18python3.8.____cpython
-      win_64_numpy1.19python3.9.____cpython:
-        CONFIG: win_64_numpy1.19python3.9.____cpython
+        SHORT_CONFIG: win_64_gnuradio_extra_pin3.9.5numpy_h5f66d0bca0
+      win_64_gnuradio_extra_pin3.9.5numpy1.19python3.9.____cpython:
+        CONFIG: win_64_gnuradio_extra_pin3.9.5numpy1.19python3.9.____cpython
         UPLOAD_PACKAGES: 'True'
-        SHORT_CONFIG: win_64_numpy1.19python3.9.____cpython
-      win_64_numpy1.21python3.10.____cpython:
-        CONFIG: win_64_numpy1.21python3.10.____cpython
+        SHORT_CONFIG: win_64_gnuradio_extra_pin3.9.5numpy_he9d9c302b4
+      win_64_gnuradio_extra_pin3.9.5numpy1.21python3.10.____cpython:
+        CONFIG: win_64_gnuradio_extra_pin3.9.5numpy1.21python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
-        SHORT_CONFIG: win_64_numpy1.21python3.10.____cpython
+        SHORT_CONFIG: win_64_gnuradio_extra_pin3.9.5numpy_h099234b685
+      win_64_gnuradio_extra_pinnumpy1.18python3.7.____cpython:
+        CONFIG: win_64_gnuradio_extra_pinnumpy1.18python3.7.____cpython
+        UPLOAD_PACKAGES: 'True'
+        SHORT_CONFIG: win_64_gnuradio_extra_pinnumpy1.18p_ha5f08e00ce
+      win_64_gnuradio_extra_pinnumpy1.18python3.8.____cpython:
+        CONFIG: win_64_gnuradio_extra_pinnumpy1.18python3.8.____cpython
+        UPLOAD_PACKAGES: 'True'
+        SHORT_CONFIG: win_64_gnuradio_extra_pinnumpy1.18p_hbacc10d1a2
+      win_64_gnuradio_extra_pinnumpy1.19python3.9.____cpython:
+        CONFIG: win_64_gnuradio_extra_pinnumpy1.19python3.9.____cpython
+        UPLOAD_PACKAGES: 'True'
+        SHORT_CONFIG: win_64_gnuradio_extra_pinnumpy1.19p_h512a12a83c
+      win_64_gnuradio_extra_pinnumpy1.21python3.10.____cpython:
+        CONFIG: win_64_gnuradio_extra_pinnumpy1.21python3.10.____cpython
+        UPLOAD_PACKAGES: 'True'
+        SHORT_CONFIG: win_64_gnuradio_extra_pinnumpy1.21p_h6f454585b3
   timeoutInMinutes: 360
   variables:
     CONDA_BLD_PATH: D:\\bld\\
@@ -62,10 +78,9 @@ jobs:
 
       condition: contains(variables['CONFIG'], 'vs2008')
       displayName: Patch vs2008 (if needed)
-
     - task: CondaEnvironment@1
       inputs:
-        packageSpecs: 'python=3.9 conda-build conda "conda-forge-ci-setup=3" pip boa' # Optional
+        packageSpecs: 'python=3.9 conda-build conda pip boa conda-forge-ci-setup=3' # Optional
         installOptions: "-c conda-forge"
         updateConda: true
       displayName: Install conda-build and activate environment
