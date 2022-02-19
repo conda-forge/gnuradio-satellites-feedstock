@@ -33,7 +33,8 @@ requirements:
 
   host:
     - boost-cpp
-    - gnuradio-core
+    - gnuradio-core  # [not gnuradio_extra_pin]
+    - gnuradio-core {{ gnuradio_extra_pin }}.*  # [gnuradio_extra_pin]
     - pip  # [win]
     - pybind11
     - python
