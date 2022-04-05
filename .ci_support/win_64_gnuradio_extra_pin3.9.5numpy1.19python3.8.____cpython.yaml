@@ -11,9 +11,9 @@ cxx_compiler:
 gnuradio_core:
 - 3.10.1
 gnuradio_extra_pin:
-- ''
+- 3.9.5
 numpy:
-- '1.18'
+- '1.19'
 pin_run_as_build:
   boost-cpp:
     max_pin: x.x.x
@@ -23,7 +23,7 @@ pin_run_as_build:
 python:
 - 3.8.* *_cpython
 spdlog:
-- '1.9'
+- '1.10'
 target_platform:
 - win-64
 volk:
