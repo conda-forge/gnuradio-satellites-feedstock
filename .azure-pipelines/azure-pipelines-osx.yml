@@ -8,14 +8,14 @@ jobs:
     vmImage: macOS-10.15
   strategy:
     matrix:
-      osx_64_gnuradio_extra_pin3.9.5numpy1.18python3.7.____cpython:
-        CONFIG: osx_64_gnuradio_extra_pin3.9.5numpy1.18python3.7.____cpython
+      osx_64_gnuradio_extra_pin3.9.5numpy1.19python3.7.____cpython:
+        CONFIG: osx_64_gnuradio_extra_pin3.9.5numpy1.19python3.7.____cpython
         UPLOAD_PACKAGES: 'True'
-        SHORT_CONFIG: osx_64_gnuradio_extra_pin3.9.5numpy_h19107aebcc
-      osx_64_gnuradio_extra_pin3.9.5numpy1.18python3.8.____cpython:
-        CONFIG: osx_64_gnuradio_extra_pin3.9.5numpy1.18python3.8.____cpython
+        SHORT_CONFIG: osx_64_gnuradio_extra_pin3.9.5numpy_hac50dcb005
+      osx_64_gnuradio_extra_pin3.9.5numpy1.19python3.8.____cpython:
+        CONFIG: osx_64_gnuradio_extra_pin3.9.5numpy1.19python3.8.____cpython
         UPLOAD_PACKAGES: 'True'
-        SHORT_CONFIG: osx_64_gnuradio_extra_pin3.9.5numpy_hb66d50e89f
+        SHORT_CONFIG: osx_64_gnuradio_extra_pin3.9.5numpy_h22094844d8
       osx_64_gnuradio_extra_pin3.9.5numpy1.19python3.9.____cpython:
         CONFIG: osx_64_gnuradio_extra_pin3.9.5numpy1.19python3.9.____cpython
         UPLOAD_PACKAGES: 'True'
@@ -24,14 +24,14 @@ jobs:
         CONFIG: osx_64_gnuradio_extra_pin3.9.5numpy1.21python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
         SHORT_CONFIG: osx_64_gnuradio_extra_pin3.9.5numpy_h3a21a16be1
-      osx_64_gnuradio_extra_pinnumpy1.18python3.7.____cpython:
-        CONFIG: osx_64_gnuradio_extra_pinnumpy1.18python3.7.____cpython
+      osx_64_gnuradio_extra_pinnumpy1.19python3.7.____cpython:
+        CONFIG: osx_64_gnuradio_extra_pinnumpy1.19python3.7.____cpython
         UPLOAD_PACKAGES: 'True'
-        SHORT_CONFIG: osx_64_gnuradio_extra_pinnumpy1.18p_h3321246049
-      osx_64_gnuradio_extra_pinnumpy1.18python3.8.____cpython:
-        CONFIG: osx_64_gnuradio_extra_pinnumpy1.18python3.8.____cpython
+        SHORT_CONFIG: osx_64_gnuradio_extra_pinnumpy1.19p_h3d306a34ed
+      osx_64_gnuradio_extra_pinnumpy1.19python3.8.____cpython:
+        CONFIG: osx_64_gnuradio_extra_pinnumpy1.19python3.8.____cpython
         UPLOAD_PACKAGES: 'True'
-        SHORT_CONFIG: osx_64_gnuradio_extra_pinnumpy1.18p_h886687f1a8
+        SHORT_CONFIG: osx_64_gnuradio_extra_pinnumpy1.19p_h06b43642c7
       osx_64_gnuradio_extra_pinnumpy1.19python3.9.____cpython:
         CONFIG: osx_64_gnuradio_extra_pinnumpy1.19python3.9.____cpython
         UPLOAD_PACKAGES: 'True'

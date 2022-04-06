@@ -12,7 +12,7 @@ source:
     - 0001-Update-Doxygen-code-from-upstream-gnuradio-template.patch
 
 build:
-  number: 0
+  number: 1
   run_exports:
     - {{ pin_subpackage('gnuradio-satellites', max_pin='x.x') }}
 
