@@ -8,22 +8,22 @@ jobs:
     vmImage: windows-2019
   strategy:
     matrix:
-      win_64_gnuradio_extra_pin3.9.5numpy1.19python3.7.____cpython:
-        CONFIG: win_64_gnuradio_extra_pin3.9.5numpy1.19python3.7.____cpython
+      win_64_gnuradio_extra_pin3.9.6numpy1.19python3.7.____cpython:
+        CONFIG: win_64_gnuradio_extra_pin3.9.6numpy1.19python3.7.____cpython
         UPLOAD_PACKAGES: 'True'
-        SHORT_CONFIG: win_64_gnuradio_extra_pin3.9.5numpy_h327b2b4768
-      win_64_gnuradio_extra_pin3.9.5numpy1.19python3.8.____cpython:
-        CONFIG: win_64_gnuradio_extra_pin3.9.5numpy1.19python3.8.____cpython
+        SHORT_CONFIG: win_64_gnuradio_extra_pin3.9.6numpy_h7885b6d903
+      win_64_gnuradio_extra_pin3.9.6numpy1.19python3.8.____cpython:
+        CONFIG: win_64_gnuradio_extra_pin3.9.6numpy1.19python3.8.____cpython
         UPLOAD_PACKAGES: 'True'
-        SHORT_CONFIG: win_64_gnuradio_extra_pin3.9.5numpy_hdd914efd8d
-      win_64_gnuradio_extra_pin3.9.5numpy1.19python3.9.____cpython:
-        CONFIG: win_64_gnuradio_extra_pin3.9.5numpy1.19python3.9.____cpython
+        SHORT_CONFIG: win_64_gnuradio_extra_pin3.9.6numpy_h404e877de4
+      win_64_gnuradio_extra_pin3.9.6numpy1.19python3.9.____cpython:
+        CONFIG: win_64_gnuradio_extra_pin3.9.6numpy1.19python3.9.____cpython
         UPLOAD_PACKAGES: 'True'
-        SHORT_CONFIG: win_64_gnuradio_extra_pin3.9.5numpy_he9d9c302b4
-      win_64_gnuradio_extra_pin3.9.5numpy1.21python3.10.____cpython:
-        CONFIG: win_64_gnuradio_extra_pin3.9.5numpy1.21python3.10.____cpython
+        SHORT_CONFIG: win_64_gnuradio_extra_pin3.9.6numpy_h274972f5b9
+      win_64_gnuradio_extra_pin3.9.6numpy1.21python3.10.____cpython:
+        CONFIG: win_64_gnuradio_extra_pin3.9.6numpy1.21python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
-        SHORT_CONFIG: win_64_gnuradio_extra_pin3.9.5numpy_h099234b685
+        SHORT_CONFIG: win_64_gnuradio_extra_pin3.9.6numpy_h765cf1e02c
       win_64_gnuradio_extra_pinnumpy1.19python3.7.____cpython:
         CONFIG: win_64_gnuradio_extra_pinnumpy1.19python3.7.____cpython
         UPLOAD_PACKAGES: 'True'
