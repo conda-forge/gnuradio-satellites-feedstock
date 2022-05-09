@@ -8,8 +8,6 @@ package:
 source:
   url: https://github.com/daniestevez/gr-satellites/archive/v{{ version }}.tar.gz
   sha256: a22fd56797e49d0c7f28c700eb12a97a10e2a89f460a1e96d5b80e6bbdf24692
-  patches:
-    - 0001-Update-Doxygen-code-from-upstream-gnuradio-template.patch
 
 build:
   number: 0
