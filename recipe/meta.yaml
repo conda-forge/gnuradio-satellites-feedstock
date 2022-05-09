@@ -1,5 +1,5 @@
 {% set name = "gnuradio-satellites" %}
-{% set version = "4.5.0" %}
+{% set version = "4.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/daniestevez/gr-satellites/archive/v{{ version }}.tar.gz
-  sha256: e137b366019c6ba8e2888df528380bc6217977b4f2a5c6a92705d0f88005cb2c
+  sha256: a22fd56797e49d0c7f28c700eb12a97a10e2a89f460a1e96d5b80e6bbdf24692
   patches:
     - 0001-Update-Doxygen-code-from-upstream-gnuradio-template.patch
 
 build:
-  number: 2
+  number: 0
   run_exports:
     - {{ pin_subpackage('gnuradio-satellites', max_pin='x.x') }}
 
