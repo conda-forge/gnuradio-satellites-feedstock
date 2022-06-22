@@ -19,7 +19,7 @@ cxx_compiler_version:
 gnuradio_core:
 - 3.10.3
 gnuradio_extra_pin:
-- 3.9.6
+- 3.9.7
 macos_machine:
 - x86_64-apple-darwin13.4.0
 numpy:
@@ -33,7 +33,7 @@ pin_run_as_build:
     min_pin: x.x
     max_pin: x.x
 python:
-- 3.9.* *_cpython
+- 3.7.* *_cpython
 spdlog:
 - '1.10'
 target_platform:
