@@ -31,7 +31,6 @@ requirements:
 
   host:
     - boost-cpp
-    - libsndfile
     - gmp  # [linux]
     - gnuradio-core  # [not gnuradio_extra_pin]
     - gnuradio-core {{ gnuradio_extra_pin }}.*  # [gnuradio_extra_pin]
