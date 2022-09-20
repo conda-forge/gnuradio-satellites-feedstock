@@ -1,5 +1,5 @@
 boost_cpp:
-- 1.74.0
+- 1.78.0
 bzip2:
 - '1'
 c_compiler:
@@ -21,7 +21,7 @@ docker_image:
 gmp:
 - '6'
 gnuradio_core:
-- 3.10.3
+- 3.10.4
 gnuradio_extra_pin:
 - ''
 numpy:
