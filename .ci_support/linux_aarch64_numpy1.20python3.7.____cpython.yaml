@@ -31,10 +31,6 @@ numpy:
 pin_run_as_build:
   boost-cpp:
     max_pin: x.x.x
-  bzip2:
-    max_pin: x
-  gmp:
-    max_pin: x
   python:
     min_pin: x.x
     max_pin: x.x
