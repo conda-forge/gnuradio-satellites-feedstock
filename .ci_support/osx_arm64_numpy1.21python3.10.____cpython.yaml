@@ -16,6 +16,8 @@ cxx_compiler:
 - clangxx
 cxx_compiler_version:
 - '14'
+fmt:
+- '9'
 gnuradio_core:
 - 3.10.4
 gnuradio_extra_pin:
