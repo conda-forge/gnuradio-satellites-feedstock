@@ -3,3 +3,5 @@ azure:
 conda_forge_output_validation: true
 bot:
   automerge: true
+conda_build:
+  pkg_format: '2'
