@@ -1,5 +1,5 @@
 {% set name = "gnuradio-satellites" %}
-{% set version = "3.15.0" %}
+{% set version = "3.15.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/daniestevez/gr-satellites/archive/v{{ version }}.tar.gz
-  sha256: feea001153c6bbf6372d89d5808af19c5137548d0accdbe63820f8a0aeb9450d
+  sha256: 5552a87cc0e095a39f10e540cd20c48937d487839638a046f4c219c9fa613018
 
 build:
-  number: 1
+  number: 0
   run_exports:
     - {{ pin_subpackage('gnuradio-satellites', max_pin='x.x') }}
 
