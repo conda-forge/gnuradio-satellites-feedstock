@@ -1,5 +1,5 @@
 {% set name = "gnuradio-satellites" %}
-{% set version = "4.10.0" %}
+{% set version = "4.11.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/daniestevez/gr-satellites/archive/v{{ version }}.tar.gz
-  sha256: 653b503be9be0e61eb15df578b85dba1a023c7fbdb79c909d5a9c48c1f96a663
+  sha256: 8985ba1a758b1f6d66b27356149017ac6fd5c7305d969ff34c12b72aaee66367
 
 build:
   number: 0
@@ -49,6 +49,7 @@ requirements:
     - python
     - pyyaml
     - requests
+    - websocket-client
 
 test:
   commands:
