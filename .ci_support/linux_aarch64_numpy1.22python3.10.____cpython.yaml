@@ -23,7 +23,7 @@ cxx_compiler_version:
 docker_image:
 - quay.io/condaforge/linux-anvil-cos7-x86_64
 fmt:
-- '9'
+- '10'
 gmp:
 - '6'
 gnuradio_core:
@@ -41,7 +41,7 @@ pin_run_as_build:
 python:
 - 3.10.* *_cpython
 spdlog:
-- '1.11'
+- '1.12'
 target_platform:
 - linux-aarch64
 volk:
