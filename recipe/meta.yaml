@@ -11,6 +11,7 @@ source:
 
 build:
   number: 0
+  skip: true  # [arm64 and py>=311]
   run_exports:
     - {{ pin_subpackage('gnuradio-satellites', max_pin='x.x') }}
 
