@@ -1,5 +1,3 @@
-boost_cpp:
-- 1.78.0
 bzip2:
 - '1'
 c_compiler:
@@ -25,8 +23,6 @@ gnuradio_extra_pin:
 numpy:
 - '1.23'
 pin_run_as_build:
-  boost-cpp:
-    max_pin: x.x.x
   python:
     min_pin: x.x
     max_pin: x.x
@@ -35,7 +31,7 @@ python:
 target_platform:
 - linux-64
 volk:
-- '3.0'
+- '3.1'
 zip_keys:
 - - c_compiler_version
   - cxx_compiler_version
