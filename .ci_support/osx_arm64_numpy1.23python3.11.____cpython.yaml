@@ -1,13 +1,15 @@
 MACOSX_DEPLOYMENT_TARGET:
 - '11.0'
-boost_cpp:
-- 1.78.0
 bzip2:
 - '1'
 c_compiler:
 - clang
 c_compiler_version:
-- '15'
+- '16'
+c_stdlib:
+- macosx_deployment_target
+c_stdlib_version:
+- '11.0'
 channel_sources:
 - conda-forge
 channel_targets:
@@ -15,7 +17,7 @@ channel_targets:
 cxx_compiler:
 - clangxx
 cxx_compiler_version:
-- '15'
+- '16'
 gnuradio_extra_pin:
 - 3.9.8
 macos_machine:
@@ -23,8 +25,6 @@ macos_machine:
 numpy:
 - '1.23'
 pin_run_as_build:
-  boost-cpp:
-    max_pin: x.x.x
   python:
     min_pin: x.x
     max_pin: x.x
@@ -33,7 +33,7 @@ python:
 target_platform:
 - osx-arm64
 volk:
-- '3.0'
+- '3.1'
 zip_keys:
 - - c_compiler_version
   - cxx_compiler_version

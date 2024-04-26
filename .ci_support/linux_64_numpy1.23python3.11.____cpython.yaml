@@ -1,11 +1,13 @@
-boost_cpp:
-- 1.78.0
 bzip2:
 - '1'
 c_compiler:
 - gcc
 c_compiler_version:
 - '12'
+c_stdlib:
+- sysroot
+c_stdlib_version:
+- '2.12'
 cdt_name:
 - cos6
 channel_sources:
@@ -25,8 +27,6 @@ gnuradio_extra_pin:
 numpy:
 - '1.23'
 pin_run_as_build:
-  boost-cpp:
-    max_pin: x.x.x
   python:
     min_pin: x.x
     max_pin: x.x
@@ -35,9 +35,11 @@ python:
 target_platform:
 - linux-64
 volk:
-- '3.0'
+- '3.1'
 zip_keys:
 - - c_compiler_version
   - cxx_compiler_version
+- - c_stdlib_version
+  - cdt_name
 - - python
   - numpy
