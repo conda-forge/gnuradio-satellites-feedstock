@@ -13,7 +13,7 @@ c_stdlib:
 c_stdlib_version:
 - '11.0'
 channel_sources:
-- conda-forge/label/numpy_rc,conda-forge
+- conda-forge
 channel_targets:
 - conda-forge main
 cxx_compiler:
@@ -23,7 +23,7 @@ cxx_compiler_version:
 fmt:
 - '10'
 gnuradio_core:
-- 3.10.10
+- 3.10.11
 gnuradio_extra_pin:
 - ''
 macos_machine:
