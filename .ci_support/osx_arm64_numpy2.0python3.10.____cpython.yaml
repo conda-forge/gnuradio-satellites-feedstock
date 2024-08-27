@@ -7,7 +7,7 @@ bzip2:
 c_compiler:
 - clang
 c_compiler_version:
-- '16'
+- '17'
 c_stdlib:
 - macosx_deployment_target
 c_stdlib_version:
@@ -19,13 +19,15 @@ channel_targets:
 cxx_compiler:
 - clangxx
 cxx_compiler_version:
-- '16'
+- '17'
 fmt:
-- '10'
+- '11'
 gnuradio_core:
 - 3.10.11
 gnuradio_extra_pin:
 - ''
+libboost_headers:
+- '1.84'
 macos_machine:
 - arm64-apple-darwin20.0.0
 numpy:
