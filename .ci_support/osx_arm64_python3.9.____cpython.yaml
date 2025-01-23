@@ -7,7 +7,7 @@ bzip2:
 c_compiler:
 - clang
 c_compiler_version:
-- '17'
+- '18'
 c_stdlib:
 - macosx_deployment_target
 c_stdlib_version:
@@ -19,7 +19,7 @@ channel_targets:
 cxx_compiler:
 - clangxx
 cxx_compiler_version:
-- '17'
+- '18'
 fmt:
 - '11'
 gnuradio_core:
@@ -39,7 +39,7 @@ pin_run_as_build:
 python:
 - 3.9.* *_cpython
 spdlog:
-- '1.14'
+- '1.15'
 target_platform:
 - osx-arm64
 volk:
