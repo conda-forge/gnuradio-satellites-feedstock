@@ -11,7 +11,7 @@ cxx_compiler:
 fmt:
 - '11'
 gnuradio_core:
-- 3.10.11
+- 3.10.12
 gnuradio_extra_pin:
 - ''
 libboost_headers:
