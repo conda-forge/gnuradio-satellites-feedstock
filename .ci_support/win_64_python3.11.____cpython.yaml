@@ -15,7 +15,7 @@ gnuradio_core:
 gnuradio_extra_pin:
 - ''
 libboost_headers:
-- '1.86'
+- '1.88'
 numpy:
 - '2'
 pin_run_as_build:
