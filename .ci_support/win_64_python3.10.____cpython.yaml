@@ -29,4 +29,4 @@ spdlog:
 target_platform:
 - win-64
 volk:
-- '3.2'
+- '3.3'

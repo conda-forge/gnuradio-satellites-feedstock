@@ -43,7 +43,7 @@ spdlog:
 target_platform:
 - osx-arm64
 volk:
-- '3.2'
+- '3.3'
 zip_keys:
 - - c_compiler_version
   - cxx_compiler_version
